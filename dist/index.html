@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black flex items-center justify-center h-screen">
+    <div
+      class="bg-gray-400 border-4 border-amber-950 outline-double p-6 rounded-2xl"
+    >
+      <span class="font-bold text-3xl">Password Generator</span>
+
+      <div
+        class="bg-white flex justify-between m-4 p-4 border-black border-2 rounded-2xl"
+      >
+        <span class="password text-2xl"></span>
+        <span class="refresh text-3xl font-extrabold hover:cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">&#10561;</span>
+      </div>
+
+      <div class="flex justify-center my-6 mx-32 bg-amber-500 rounded-2xl p-2 hover:cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+        <span class="gen-btn font-bold text-2xl">Generate Password</span>
+      </div>
+
+      <div class="copy flex justify-center bg-black mx-32 p-2 rounded-2xl hover:cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+        <div class="mr-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#F3F3F3"
+          >
+            <path
+              d="M120-220v-80h80v80h-80Zm0-140v-80h80v80h-80Zm0-140v-80h80v80h-80ZM260-80v-80h80v80h-80Zm100-160q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480Zm40 240v-80h80v80h-80Zm-200 0q-33 0-56.5-23.5T120-160h80v80Zm340 0v-80h80q0 33-23.5 56.5T540-80ZM120-640q0-33 23.5-56.5T200-720v80h-80Zm420 80Z"
+            />
+          </svg>
+        </div>
+        <span class="font-bold text-white">Copy Password</span>
+      </div>
+
+      <div class="flex gap-10 m-6 justify-center">
+        <div class="flex flex-col gap-2 mr-3 p-2">
+          <label class="flex items-center gap-2 text-lg font-bold">
+            <input type="checkbox" class="ul w-4 h-4" />
+            Uppercase letters
+          </label>
+          <label class="flex items-center gap-2 text-lg font-bold">
+            <input type="checkbox" class="n w-4 h-4" />
+            Numbers
+          </label>
+        </div>
+        <div class="flex flex-col gap-2 mr-3 p-2">
+          <label class="flex items-center gap-2 text-lg font-bold">
+            <input type="checkbox" class="ll w-4 h-4" />
+            Lowercase letters
+          </label>
+          <label class="flex items-center gap-2 text-lg font-bold">
+            <input type="checkbox" class="s w-4 h-4" />
+            Symbols
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
